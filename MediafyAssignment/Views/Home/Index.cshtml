@@ -1,0 +1,18 @@
+﻿@model MediafyAssignment.ViewModels.ProductsViewModel
+@{
+    ViewData["Title"] = "Frontend Assigment";
+}
+
+
+    <table>
+        @foreach (var product in Model.Products)
+        {
+
+            <tr>
+                <td><img src="@product.Image" width="40" /></td>
+                <td contentType="application/json" pageEncoding="UTF-8">@product.Name</td>
+                <td>@product.FromPrice</td>
+            </tr>
+
+        }
+    </table>
