@@ -20,6 +20,7 @@ namespace MediafyAssignment.Repositories
             {
                 jsonFile = r.ReadToEnd();
             }
+
             return JsonConvert.DeserializeObject<List<Product>>(jsonFile);
         }
         public void UpdateProductData(IEnumerable<Product> UpdatedProducts)
